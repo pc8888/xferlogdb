@@ -1,0 +1,27 @@
+<?php
+// $Id$
+
+/**
+ EDIT THE FOLLOWING LINES TO FIT YOUR INSTALLATION 
+ AND RENAME ME TO dbconnect.php 
+**/
+
+$XFERLOG_FILE="/glftpd/ftp-data/logs/xferlog";
+$GLFTPD_FILE="/glftpd/ftp-data/logs/glftpd.log";
+$LOGIN_FILE="/glftpd/ftp-data/logs/login.log";
+$SITE_ROOT="/site";	// will be removed from the file path
+
+$dbname="xferlog"; // database name - make sure it exists!
+$dbhost="127.0.0.1"; // db hostname
+$dbuser="changeme"; // db user name
+$dbpass="changemetoo"; // db password
+
+$glftpd_version = 1.31; // glftpd version
+
+$hideip = false;     // true = hide, false = show ip
+
+$newDirs = array('MIXED', 'GAMES', 'UTILS', 'VCD', 'MP3S'); // setup array for newdirs function, MIXED = all dirs
+
+$conn = mysql_pconnect($dbhost,$dbuser,$dbpass);
+mysql_select_db($dbname);
+?>

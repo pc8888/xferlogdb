@@ -1,0 +1,58 @@
+$Id$
+
+xferlogDB - http://xferlogdb.sf.net
+--------------------------------------------------------
+
+Maintained By webbie - webbie at users.sf.net and
+              r0ach - r000000000ach at users.sf.net
+
+Created by Brian Christensen - brian@jordhulen.dk
+
+ 
+ ABOUT:
+ 
+ A PHP/MySQL tool for analysing xferlog and glftpd.log from glftpd.
+ xferlogDB reads the log files from glftpd and adds the data to a MySQL 
+ database.
+
+ The rest is done by PHP scripts.
+
+ It's tested with glftpd log files.
+
+ 
+ 
+ INSTALL:
+
+ Required a MySQL/Apache server running (with PHP support) and read access 
+ to the glftpd log file
+ - create a database on your MySQL server (eg. xferlogdb)
+ - create the tables, use the 'xferlogdb_tables.sql' script
+ - copy the PHP scripts and the 'styles.css' to a folder on your webserver
+ - rename 'dbconnect.php.new' to 'dbconnect.php'
+ - edit the 'dbconnect.php'
+   (the 'xferlog', 'glftpd.log' file path, the ftp site root and MySQL user/passwd/host)
+ - that's it
+
+
+ USAGE:
+
+ Run the 'update.php' through the browser to update the stat.
+ Example, http://localhost/xferlogDB/update.php 
+ You can also use the "update.php" script in a cron job to update your database.
+ If you know PHP, feel free to edit the scripts - if not let me know if you
+ need more features.
+
+
+ HINT:
+
+ Keep the glftpd.log and xferlog as small as possible. Since update.php
+ require reading the whole log file and update MySQL.
+
+ For example, in FreeBSD, you can add the following lines to /etc/newsyslog
+ /glftpd/ftp-data/logs/xferlog       644  7     100  *     B
+ /glftpd/ftp-data/logs/glftpd.log    644  7     100  *     B
+
+
+ STILL HAVING PROBLEM?
+ Post the problem on http://code.google.com/p/xferlogdb/issues/list
+

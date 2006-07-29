@@ -1,0 +1,38 @@
+<!-- $Id$ -->
+
+body{
+ font-family: verdana,arial,sans-serif;
+ font-size: 11px;
+ background: #FFFFFF;
+ color: #000000;
+}
+
+a{
+ text-decoration: underline;
+}
+
+a:link{
+ color: blue;
+}
+
+a:visited{
+ color: blue;
+}
+
+a:hover{
+ color: orange;
+}
+
+div.box-border{
+ border: 1px solid #999999;
+ margin-right: 8px;
+ margin-bottom: 20px;
+}
+div.box-text{
+ padding: 5px;
+ background: #EEEEEE;
+}
+input,select,button,option,table{
+ font-family: verdana,arian,sans-serif;
+ font-size: 11px;
+}

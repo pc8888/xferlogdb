@@ -1,0 +1,47 @@
+<!-- $Id$ -->
+
+body{
+ background-color: #ffeacb;
+ color: #000000;
+}
+
+.down{
+ color: red;
+}
+
+.up{
+ color: green;
+}
+
+a{
+ text-decoration: underline;
+}
+
+a:link{
+ color: black;
+}
+
+a:visited{
+ color: black;
+}
+
+a:hover{
+ color: orange;
+}
+
+div.box-border{
+ border: 1px solid #999999;
+ margin-right: 8px;
+ margin-bottom: 20px;
+}
+div.box-text{
+ padding: 5px;
+ background: #ffa853;
+}
+input,select,button,option,table,p,div{
+ font-family: verdana,arian,sans-serif;
+ font-size: 11px;
+}
+h1,h3{
+ font-family: verdana,arian,sans-serif;
+}

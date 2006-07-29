@@ -1,0 +1,52 @@
+<!-- $Id$ -->
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	background-color: #BBBBBB;
+}
+
+.down{
+ color: red;
+}
+
+.up{
+ color: #00A800;
+}
+
+a{
+ text-decoration: underline;
+}
+
+a:link{
+ color: #FFFFFF;
+}
+
+a:visited{
+ color: #FFFFFF;
+}
+
+a:hover{
+ color: orange;
+}
+
+div.box-border{
+ border: 1px solid #999999;
+ margin-right: 8px;
+ margin-bottom: 20px;
+}
+div.box-text{
+ padding: 5px;
+ background: #525D7B;
+}
+input,select,button,option,table,p,div{
+ font-family: verdana,arian,sans-serif;
+ font-size: 11px;
+}
+h1,h3{
+ font-family: verdana,arian,sans-serif;
+}
+p.indent {
+	text-indent: 5pt;
+}
+
